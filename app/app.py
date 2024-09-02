@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    data = [{'hostname': f'{hostname}', 'Hello': 'World', "from": "tsanghan-ce6", "semver": "v1.0.1"}]
+    data = [{'hostname': f'{hostname}', 'Hello': 'World', "from": "tsanghan-ce6", "semver": "v1.0.2"}]
     return jsonify(data=data, status=200, mimetype='application/json')
 
 if __name__ == '__main__':
